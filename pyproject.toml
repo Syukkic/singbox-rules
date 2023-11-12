@@ -1,0 +1,21 @@
+[project]
+name = "SingBox-rules"
+version = "1.0.0"
+description = "A tool migrate Clash rules into SingBox rules"
+authors = [{ name = "Yuki.N", email = "Syukkic@Gmail.com" }]
+dependencies = []
+requires-python = ">=3.11"
+readme = "README.md"
+license = { text = "MIT" }
+
+[tool.pdm.scripts]
+go = './src/main.py'
+test = './tests/test_function.py'
+
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.format]
+quote-style = "single"
+indent-style = "space"
